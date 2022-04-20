@@ -25,7 +25,6 @@ The output is a table of file types (columns) by change type (rows).
 The change types are A (added), D (deleted), M (modified), and sometimes a R* (Revised).  Here's an example:
 
 ```
-          .md gif jpg png yml
            .md gif jpg png yml
          1   0   0   0   0   0
   A      0   8   0   1   8   0
