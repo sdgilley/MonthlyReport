@@ -2,6 +2,10 @@
 # file comes from a git bash query such as:
 # git whatchanged --since '3/01/2022' --until '3/31/2022' --oneline --pretty=format: | grep "articles/machine-learning" | sort | uniq >> whatchanged.csv 
 
+# uncomment the next line if you don't have dplyr installed:
+# install.packages('dplyr')
+
+
 changed <- read.table("whatchanged.csv", header=FALSE, sep="", allowEscapes = TRUE, fill=TRUE)
 keep <- c("V5","V6")
 changed <- changed[, names(changed) %in% keep]
