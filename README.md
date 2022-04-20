@@ -22,7 +22,7 @@ I use this R script for a monthly report, to summarize how many files have been 
 Once the file **whatchanged.csv** is in the same directory as **findchanges.R**, run the R script.  I use RStudio, but you can use any R IDE you wish.
 
 The output is a table of file types (columns) by change type (rows).  
-The change types are A (added), D (deleted), M (modified), and sometimes a R* (Revised).  Here's an example:
+The change types are A (added), D (deleted), M (modified), and sometimes a R* (Renamed).  Here's an example:
 
 ```
            .md gif jpg png yml
