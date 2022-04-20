@@ -26,9 +26,10 @@ The change types are A (added), D (deleted), M (modified), and sometimes a R* (R
 
 ```
           .md gif jpg png yml
-            0   0   0   0   0
-  A         8   0   1   8   0
-  D         5   1   1   8   0
-  M       141   0   0   2   1
-  R085      1   0   0   0   0
+           .md gif jpg png yml
+         1   0   0   0   0   0
+  A      0   8   0   1   8   0
+  D      0   5   1   1   8   0
+  M      0 141   0   0   2   1
+  R085   0   1   0   0   0   0
   ```
