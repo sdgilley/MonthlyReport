@@ -12,7 +12,7 @@ changed <- changed[, names(changed) %in% keep]
 
 # rename the remaining variables
 library (dplyr)
-changed <- changed %>% rename(Type = V5, Filename = V6)
+changed <- changed %>% rename(ChangeType = V5, Filename = V6)
 
 
 # find the unique filename/type combos
@@ -23,4 +23,4 @@ library("stringr")
 unique$FileType <- str_sub(unique$Filename, -3, -1)
 
 #show counts for unique files
-table(unique$Type, unique$FileType)
+table(unique$ChangeType, unique$FileType)
