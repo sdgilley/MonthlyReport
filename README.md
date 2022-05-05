@@ -1,6 +1,6 @@
 # MonthlyReport
 
-I use this R script for a monthly report, to summarize how many files have been added, modified, deleted.
+Use this R script for a monthly report, to summarize how many files have been added, modified, deleted. Data to summarize comes from a `git whatchanged` query on the branch and dates of interest.
 
 ## Generate data
 
