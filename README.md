@@ -8,6 +8,11 @@ Use this R script for a monthly report, to summarize how many files have been ad
     * To start, go to your local repository. 
     * Check out the branch you're interested in reporting on.  Usually, this is main, but it might also be a release branch. 
     * Do a `git pull upstream` to get the most recent version of the branch.
+    * For example, for the main branch:
+    ```
+    git checkout main
+    git pull upstream main
+    ```
 
 1. **Run query.** In a git bash shell, run the following.  Substitute the dates and the directory path that you're reporting on.  This is my query from March:
 
