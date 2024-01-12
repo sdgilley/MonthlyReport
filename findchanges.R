@@ -24,3 +24,7 @@ unique$FileType <- str_sub(unique$Filename, -3, -1)
 
 #show counts for unique files
 table(unique$ChangeType, unique$FileType)
+
+### If you want to investigate the files further, write a csv file:
+write.csv(unique, "filechanges.csv")
+
