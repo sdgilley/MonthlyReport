@@ -9,14 +9,11 @@
 			"useTesting": true,
 			"vscodeRSupport": "minimal"
 		},
-		"ghcr.io/rocker-org/devcontainer-features/rstudio-server:0": {
-			"singleUser": true,
-			"version": "stable"
+		"ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
+				"packages": "dplyr"
 		}
-	}
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
