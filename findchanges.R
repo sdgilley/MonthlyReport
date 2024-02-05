@@ -23,8 +23,17 @@ library("stringr")
 unique$FileType <- str_sub(unique$Filename, -3, -1)
 
 #show counts for unique files
-table(unique$ChangeType, unique$FileType)
+print(table(unique$ChangeType, unique$FileType))
+
+#show the added files
+print("Added:")
+print(unique[unique$FileType==".md" & unique$ChangeType=='A', 'Filename'])
+print("Deleted:")
+#show the deleted files
+print(unique[unique$FileType==".md" & unique$ChangeType=='D', 'Filename'])
 
 ### If you want to investigate the files further, write a csv file:
-write.csv(unique, "filechanges.csv")
+#write.csv(unique, "filechanges.csv")
+### If you want to investigate the files further, write a csv file:
+# write.csv(unique, "filechanges.csv")
 
