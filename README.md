@@ -2,6 +2,9 @@
 
 Use this R script for a monthly report, to summarize how many files have been added, modified, deleted. Data to summarize comes from a `git whatchanged` query on the branch and dates of interest.
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/sdgilley/MonthlyReport?quickstart=1)
+
+
 ## Generate data
 
 1. **Check out and update branch.** 
