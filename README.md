@@ -23,11 +23,11 @@ Use this R script for a monthly report, to summarize how many files have been ad
     git whatchanged --since '3/01/2022' --until '3/31/2022' --oneline --pretty=format: | grep "articles/machine-learning" | sort | uniq >> whatchanged.csv 
     ```
 
-1. **Move file.** Now move the file **whatchanged.csv** into the directory with the R script.  
+1. **Upload file** Now upload the file **whatchanged.csv** into the codespace.
 
 ## Run findchanges.R
 
-Once the file **whatchanged.csv** is in the same directory as **findchanges.R**, run the R script.  I use RStudio, but you can use any R IDE you wish.
+Once the file **whatchanged.csv** is in the same directory as **findchanges.R**, run the R script. 
 
 The output is a table of file types (columns) by change type (rows).  
 The change types are A (added), D (deleted), M (modified), and sometimes a R* (Renamed).  Here's an example:
@@ -40,3 +40,6 @@ The change types are A (added), D (deleted), M (modified), and sometimes a R* (R
   M      0 141   0   0   2   1
   R085   0   1   0   0   0   0
   ```
+
+
+Following this table is a list of added and deleted files.
