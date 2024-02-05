@@ -9,9 +9,9 @@
 			"useTesting": true,
 			"vscodeRSupport": "minimal"
 		},
-		"ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
-				"packages": "dplyr"
-		}
+        "ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
+            "packages": ["dplyr", "stringr"]
+        }
 
 	}
 
